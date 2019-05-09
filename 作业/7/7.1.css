@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.box{
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: bold;
+    width: 550px;
+    height: 200px;
+    background-color: yellow;
+    position: relative;
+    /*left: 50px;*/
+    /*top: 30px;*/
+    margin: auto;
+
+}
+p{
+    padding: 20px;
+    line-height: 25px;
+
+}
+span{
+    margin: auto;
+    font-size: 25px;
+    /*color: greenyellow;*/
+}

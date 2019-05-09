@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="5.1.css">
+    <script src="5.1.js"></script>
+</head>
+<body>
+<div class="box">
+    <table>
+    <tr>
+        <td>属&emsp;性：</td>
+        <td><input id="cssName" value="" type="text" placeholder="&emsp;请输入CSS属性"></td>
+    </tr>
+    <tr>
+        <td>属性值：</td>
+        <td><input id="cssAttr" value="" type="text" placeholder="&emsp;请输入CSS属性值"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input  class="button" type="button" value="设置" ></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><div class="box2"><span>第五次作业</span></div></td>
+    </tr>
+</table>
+</div>
+<script>
+    // 获取的是class的话，一般用a开头，id的话，一般用o 开头。
+    var aSub = document.getElementsByClassName("button");
+    aSub[0].onclick = function submit() {
+        var oCssName = document.getElementById("cssName").value;
+        var oCssAttr = document.getElementById("cssAttr").value;
+        var oCssBox2 = document.getElementsByClassName("box2");
+
+        oCssBox2[0].style[oCssName] = [oCssAttr];
+
+    };
+</script>
+
+</body>
+</html>

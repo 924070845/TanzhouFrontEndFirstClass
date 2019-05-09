@@ -1,0 +1,88 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+.box{
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    /*border: 1px solid red;*/
+    position: relative;
+}
+/*操作li比操作img简单*/
+.box .pic li{
+    position: absolute;
+    /*display: none;*/
+}
+.box .pic li img{
+    width: 600px;
+    height: 300px
+    /*display: block;*/
+}
+.box .pic li .show{
+    display: block;
+}
+
+.tab li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid red;
+    float: left;
+    margin: 5px;
+}
+.tab{
+    position: absolute;
+    bottom: 10px;
+    /*right: 25px;*/
+    width: 110px;
+    left: 50%;
+    margin-left: -55px;
+    /*两句，让元素块居中，已经定位的元素，不能使用margin： auto*/
+
+}
+.tab li:hover{
+    background-color: darkgrey;
+    cursor: pointer;    /*当光标划上去的时候，鼠标编程手指*/
+
+}
+
+.on{
+    background-color: orange;
+}
+.box .btn li{
+    width: 30px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    text-align: center; /*水平居中*/
+    background-color: #ededed;
+    line-height: 50px;  /*高度居中*/
+    display: none;
+}
+.box:hover .btn li{
+    display: block;
+}
+/*鼠标滑入时变成手指*/
+.box .btn li:hover{
+    cursor: pointer;
+    background-color: darkgrey;
+
+}
+.box .btn li.left {
+    float: left;
+    left: 0;
+
+}
+.box .btn li.right {
+    float: right;
+    right: 0;
+
+}

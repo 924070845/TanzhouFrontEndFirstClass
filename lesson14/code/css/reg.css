@@ -1,0 +1,76 @@
+body{
+    background: antiquewhite;
+}
+.contain{
+    width: 100%;
+    padding-top: 20px;
+}
+.contain .reg-contain{
+    width: 440px;
+    margin: auto;
+    background: white;
+    padding: 0 20px 20px 20px;
+}
+.contain .reg-contain .reg-top{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+.contain .reg-contain .reg-top h2{
+    float: left;
+    height: 60px;
+    border-bottom: 5px solid blue;
+    box-sizing: border-box;
+}
+.contain .reg-contain .reg-top a{
+    float: right;
+}
+
+
+
+.contain .reg-contain form div{
+    margin-top: 20px;
+    height: 40px;
+    width: 440px;
+}
+.contain .reg-contain form div input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.contain .reg-contain form div input.form-captcha,
+.contain .reg-contain form div input.captcha-graph {
+    width: 306px;
+    float: left;
+}
+.contain .reg-contain form div a{
+    float: right;
+    display: block;
+    width: 122px;
+    height: 38px;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 38px;
+}
+
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

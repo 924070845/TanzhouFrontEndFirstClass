@@ -1,0 +1,76 @@
+body{
+    background: #c1c1c1;
+}
+.contain{
+    width: 100%;
+    padding-top: 50px;
+}
+.contain .login-contain{
+    width: 400px;
+    margin: auto;
+    background: white;
+    padding: 0 20px;
+}
+.contain .login-contain .login-top{
+    line-height: 60px;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+.contain .login-contain .login-top h2{
+    float: left;
+    border-bottom: 5px solid blue;
+    height: 60px;
+    box-sizing: border-box;
+}
+.contain .login-contain .login-top a{
+    float: right;
+}
+
+
+
+.contain .login-contain form div{
+    margin-top: 20px;
+}
+.contain .login-contain form div input{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.contain .login-contain form div label input{
+    width: 15px;
+    height: 15px;
+    vertical-align: -2px;
+}
+.contain .login-contain form div a{
+    float: right;
+    color: #dddddd;
+}
+.contain .login-contain form div input[type=submit]{
+    background: skyblue;
+    margin-bottom: 20px;
+}
+
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

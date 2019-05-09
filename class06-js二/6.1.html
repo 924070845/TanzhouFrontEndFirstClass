@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #box li{
+            list-style: none;
+            width: 30px;
+            height:30px;
+            background-color: orange;
+            margin: 10px;
+            float: left;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-size: 10px;
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <ul>
+        <li>000</li>
+        <li>001</li>
+        <li>002</li>
+        <li>003</li>
+
+    </ul>
+</div>
+
+<script>
+    var aLi = document.getElementsByTagName("li");
+    for (let i = 0, len = aLi.length; i < len; i++ ){
+        aLi[i].onclick = function(){
+            alert(i);
+        //     var oCssBox2 = document.getElementsByClassName("box2");
+        //
+        // oCssBox2[0].style[oCssName] = [oCssAttr];
+
+        }
+    }
+</script>
+</body>
+</html>

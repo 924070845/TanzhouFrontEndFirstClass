@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <p id="time">敌军还有<span>5s</span>到达战场，请做好准备</p>
+</div>
+
+
+<script>
+    var oTime = document.getElementById("time");
+    var num = 5;
+    var timer ;  //存放定时器对象。
+
+    timer = setInterval(function (){
+        num --;
+        oTime.innerHTML = "敌军还有" + num + "s到达战场，请做好准备";
+        if (num === 1){
+            clearInterval(timer);
+            // window.location.href = "http://www/baidu.com";
+            oTime.innerHTML = "全军出击！！！";
+            oTime.style.color = "red";
+            oTime.style.fontSize = "30";
+        }
+        console.log(num);
+    }, 1000);
+</script>
+</body>
+</html>

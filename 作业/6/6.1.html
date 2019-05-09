@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>静态轮播2</title>
+    <link rel="stylesheet" href="6.1.css">
+</head>
+<body>
+<div class="box">
+    <ul class="pic">
+        <li class="show"><img src="http://i1.mifile.cn/a4/xmad_15390566279642_JIicR.jpg"></li>
+        <li ><img src="http://i1.mifile.cn/a4/xmad_15378467692556_lnrbU.jpg"></li>
+        <li ><img src="http://i1.mifile.cn/a4/xmad_15396921038973_TNqyb.jpg"></li>
+        <li ><img src="http://i1.mifile.cn/a4/xmad_15259408612582_TGdhA.jpg"></li>
+        <li ><img src="http://i1.mifile.cn/a4/xmad_15378467692556_lnrbU.jpg"></li>
+    </ul>
+
+    <ul class="tab">
+        <li class="on "></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <ul class="btn">
+        <li class="left">&lt;</li>
+        <li class="right">&gt;</li>
+    </ul>
+</div>
+<script>
+    //方法一，不推荐
+    var aTab = document.querySelectorAll(".tab li");
+    var aBox = document.querySelectorAll(".box li");
+    var len = aTab.length;
+    var first = 0;  //定义第一张图片
+    // }
+    //方法二，推荐
+    for (var i = 0; i <= len; i++ ){
+        aTab[i].index1 = i;  //自定义的变量
+        aBox[i].index2 = i;
+        aTab[i].onclick = function(){
+            aBox[first].className = "";
+            first = this.index1;
+            aBox[first].className = "show";
+
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/*header star*/
+.header{
+    width: 100%;
+    height: 69px;
+    background: black;
+    color: #fff;
+}
+
+.header .header-contain{
+    width: 1200px;
+    height: 69px;
+    line-height: 69px;
+    margin: auto;
+    background: black;
+}
+
+.header .header-contain .logo{
+    width: 235px;
+    height: 64px;
+    float: left;
+}
+.header .header-contain .logo .logo-title{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.python.org/static/img/python-logo.png") no-repeat;
+}
+
+.header .header-contain .menu{
+    float: left;
+    margin-left: 100px;
+}
+
+.header .header-contain .menu li{
+    height: 69px;
+    padding: 0 30px;
+    float: left;
+
+}
+.header .header-contain .menu li.active{
+    border-bottom: 5px solid blue;
+    /*box-sizing属性允许您以特定的方式定义匹配某个区域的特定元素,http://www.w3school.com.cn/cssref/pr_box-sizing.asp*/
+    box-sizing: border-box;
+}
+.header .header-contain .menu li:hover{
+    border-bottom: 5px solid blue;
+    box-sizing: border-box;
+}
+
+.header .header-contain .login-box{
+    float: right;
+}
+.header .header-contain .login-box i{
+    font-size: 25px;
+    color: blueviolet;
+    /*垂直方向*/
+    vertical-align: -3px;
+    /*text-align: center;  水平方向
+    */
+}
+
+
+/*footer star*/
+.footer{
+    width: 100%;
+    background: rgb(93,94,103);
+}
+.footer .footer-box{
+    width: 1200px;
+    margin: auto;
+    background: rgb(93,94,103);
+    text-align: center;
+    color: #c1c1c1;
+}
+.footer .footer-box .footer-content{
+    line-height: 35px;
+    padding: 20px 0;
+    background: url("https://www.python.org/static/img/python-logo.png") no-repeat 50px 15px;
+}
+.footer .bottom-content{
+    background: black;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+.footer .bottom-content p{
+    width: 1200px;
+    background: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

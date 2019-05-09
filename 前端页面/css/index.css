@@ -1,0 +1,111 @@
+body{
+    background: #dddddd;
+}
+.main{
+    width: 100%;
+    padding: 30px 0;
+}
+.main .main-box{
+    width: 1200px;
+    margin: auto;
+    background: antiquewhite;
+    height: 1000px;
+}
+.main .main-box .main-contain{
+    float: left;
+    width: 800px;
+    background: aqua;
+}
+
+
+/*banner*/
+.main .main-box .main-contain .banner{
+    width: 800px;
+    height: 200px;
+    position: relative;
+    background: #7feb5f;
+}
+.main .main-box .main-contain .banner li:hover{
+    cursor: pointer;  /*滑入式，鼠标变成手指*/
+}
+.main .main-box .main-contain .banner .pic li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*让所有的图片定位到限定的框框内，上和左的位置为0*/
+}
+.main .main-box .main-contain .banner .tab{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    height: 22px;
+    margin-left: -64px;
+    /*两个箭头的位置*/
+}
+.main .main-box .main-contain .banner .tab li{
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+    float: left;
+    margin: 5px;
+}
+.main .main-box .main-contain .banner .tab li.on{
+    background: blueviolet;
+}
+.main .main-box .main-contain .banner .btn li i{
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    display: none;
+}
+.main .main-box .main-contain .banner:hover .btn li i{
+    display: block;
+}
+.main .main-box .main-contain .banner .btn li.left i{
+    left: 0;
+    /*左箭头靠左*/
+}
+.main .main-box .main-contain .banner .btn li.right i{
+    right: 0;
+    /*右箭头靠右*/
+}
+
+
+/*content*/
+.main .main-box .main-contain .content{
+    width: 800px;
+    background: blueviolet;
+    font-size: 14px;
+}
+
+.main .main-box .main-contain .content .recommend-news li a img{
+    width: 250px;
+    height: 180px;
+    transition: all 2s;  /*让所有图片的变幻过程为2秒*/
+}
+
+.main .main-box .main-contain .content .recommend-news{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 15px 10px 15px;
+    /*http://www.runoob.com/cssref/css3-pr-justify-content.html
+     justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式space-around space-between*/
+}
+.main .main-box .main-contain .content .recommend-news li p{
+    text-align: center;
+    line-height: 30px;
+}
+.main .main-box .main-contain .content .recommend-news li>a{ /*li 标签下的子代a*/
+    display: block;
+    width: 250px;
+    height: 180px;
+    overflow: hidden;  /*放大后会超出界限，这个属性就是超出隐藏掉*/
+}
+.main .main-box .main-contain .content .recommend-news li a img:hover{
+    /*http://www.w3school.com.cn/cssref/pr_transform.asp*/
+    transform: scale(1.2);  /*放大1.2倍，当鼠标滑入的时候*/
+}
+

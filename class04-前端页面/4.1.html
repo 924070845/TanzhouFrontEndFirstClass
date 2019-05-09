@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title前端页面</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .c1{
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+        }
+        .c2{
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /*position: absolute;*/
+        }
+        .c3{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 100px;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="c1">
+    <div class="c2">
+        <div class="c3">
+            1
+        </div>
+        2
+    </div>
+    3
+</div>
+
+</body>
+</html>

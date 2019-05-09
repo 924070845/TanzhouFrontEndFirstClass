@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单练习</title>
+    <style>
+        input{
+            width: 300px;
+            height: 30px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        #xieyi{
+            width: 20px ;
+            height: 20px;
+        }
+        .yanzhengma{
+            width: 140px;
+            height: 30px;
+
+        }
+    </style>
+</head>
+<body>
+
+<div align="center">
+    <form action="" method="post" autocomplete="off">
+        <table border="0" width="400px" height="30px" cellpadding="5px" >
+            <tr>
+                <td style="float: right" ;>用户名&emsp;</td>
+                <td><input type="text" placeholder="请设置用户名"></td>
+            </tr>
+            <tr>
+                <td style="float: right" ;>密码&emsp;</td>
+                <td><input type="password" placeholder="请设置登录密码"></td>
+            </tr>
+            <tr>
+                <td style="float: right" ;>手机号&emsp;</td>
+                <td><input type="text" placeholder="可用于登录和找回密码"></td>
+            </tr>
+            <tr>
+                <td>验证码&emsp;</td>
+                <td><input type="text" placeholder="请输入验证码" class="yanzhengma" width="140">&emsp;
+                    <input type="button" class="yanzhengma" value="获取短信验证码" width="140"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input id="xieyi" type="checkbox" value="" >阅读并接受《协议》</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="注册"></td>
+            </tr>
+        </table>
+    </form>
+
+
+</div>
+
+
+
+
+</body>
+</html>

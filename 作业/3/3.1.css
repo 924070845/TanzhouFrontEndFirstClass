@@ -1,0 +1,33 @@
+        .content{
+            background: url(python图.jpg) no-repeat;
+            background-size: cover;
+            background-color: honeydew;
+            width: 960px;
+            height: 520px;
+
+
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        img{
+            /*width: 960px;*/
+            /*height: 520px;*/
+        }
+        .box2{
+            width: 80%;
+            height: 90%;
+            position: relative;
+            left: 80px;
+            border: blue;
+        }
+        .title2{
+            color: blueviolet;
+
+        }
+        p{
+            /*text-indent: 2em;*/
+            line-height: 27px;
+            font-size: 20px;
+            text-indent: 40px;
+        }

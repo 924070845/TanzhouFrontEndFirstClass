@@ -1,0 +1,263 @@
+body{
+    background: #dddddd;
+}
+.main{
+    width: 100%;
+    padding: 30px 0;
+}
+.main .main-box{
+    width: 1200px;
+    margin: auto;
+    background: antiquewhite;
+    /*height: 1000px;*/
+}
+.main .main-box .main-contain{
+    float: left;
+    width: 800px;
+    background: aqua;
+}
+
+
+/*banner*/
+.main .main-box .main-contain .banner{
+    width: 800px;
+    height: 200px;
+    position: relative;
+    background: #7feb5f;
+}
+.main .main-box .main-contain .banner li:hover{
+    cursor: pointer;
+}
+.main .main-box .main-contain .banner .pic li{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main .main-box .main-contain .banner .tab{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    height: 22px;
+    margin-left: -64px;
+}
+.main .main-box .main-contain .banner .tab li{
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+    float: left;
+    margin: 5px;
+}
+.main .main-box .main-contain .banner .tab li.on{
+    background: blueviolet;
+}
+.main .main-box .main-contain .banner .btn li i{
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    display: none;
+}
+.main .main-box .main-contain .banner:hover .btn li i{
+    display: block;
+}
+.main .main-box .main-contain .banner .btn li.left i{
+    left: 0;
+}
+.main .main-box .main-contain .banner .btn li.right i{
+    right: 0;
+}
+
+
+/*content*/
+.main .main-box .main-contain .content{
+    width: 800px;
+    background: blueviolet;
+    font-size: 14px;
+}
+
+.main .main-box .main-contain .content .recommend-news li a img{
+    width: 250px;
+    height: 180px;
+    transition: all 2s;
+}
+
+.main .main-box .main-contain .content .recommend-news{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 15px 10px 15px;
+    /*http://www.runoob.com/cssref/css3-pr-justify-content.html
+     justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式space-around space-between*/
+}
+.main .main-box .main-contain .content .recommend-news li p{
+    text-align: center;
+    line-height: 30px;
+}
+.main .main-box .main-contain .content .recommend-news li>a{
+    display: block;
+    width: 250px;
+    height: 180px;
+    overflow: hidden;
+}
+.main .main-box .main-contain .content .recommend-news li a img:hover{
+    /*http://www.w3school.com.cn/cssref/pr_transform.asp*/
+    transform: scale(1.2);
+}
+
+
+
+/*news-nav*/
+.main .main-box .main-contain .news-nav .nav{
+    width: 800px;
+    height: 60px;
+    background: bisque;
+    line-height: 60px;
+}
+.main .main-box .main-contain .news-nav .nav li{
+    float: left;
+    height: 60px;
+    padding: 0 20px;
+}
+.main .main-box .main-contain .news-nav .nav li:hover{
+    cursor: pointer;
+}
+.main .main-box .main-contain .news-nav .nav li.active{
+    border-bottom: 5px solid red;
+    box-sizing: border-box;
+}
+.main .main-box .main-contain .news-nav .contain {
+    width: 800px;
+    background: blueviolet;
+}
+.main .main-box .main-contain .news-nav .contain li > div{
+    margin-bottom: 20px;
+}
+.main .main-box .main-contain .news-nav .contain .left{
+    float: left;
+    width: 260px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 5px;
+}
+.main .main-box .main-contain .news-nav .contain .left img{
+    width: 260px;
+    height: 200px;
+
+}
+.main .main-box .main-contain .news-nav .contain .right {
+    float: left;
+    line-height: 35px;
+    padding: 26px 0 0 0;
+}
+.main .main-box .main-contain .news-nav .contain .right span{
+    color: red;
+}
+
+.main .main-box .main-contain .news-nav .contain li{
+    display: none;
+}
+.main .main-box .main-contain .news-nav .contain li.show{
+    display: block;
+}
+.main .main-box .main-contain .more{
+    width: 400px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    margin: auto;
+    background: #7feb5f;
+}
+
+
+/*aside*/
+.main .main-box .aside{
+    float: right;
+    width: 360px;
+    background: yellow;
+}
+
+.main .main-box .aside .side-activities h2{
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+}
+.main .main-box .aside .side-activities h2 span{
+    float: right;
+    color: red;
+}
+.main .main-box .aside .side-activities div img{
+    width: 320px;
+    padding: 0 20px;
+}
+.main .main-box .aside .side-activities div p{
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+}
+.main .main-box .aside .side-activities .about{
+    padding: 0 20px;
+    width: 320px;
+    background: url("http://onj3s3zfw.bkt.clouddn.com/o_1cggt7lvb1ovi1l1g1ucu8nl1spc7.jpg") no-repeat 200px 40px/100px 100px;
+}
+
+.main .main-box .aside .side-activities .about ul li{
+    height: 50px;
+    line-height: 50px;
+}
+
+.main .main-box .aside .side-activities .about ul li i{
+    font-size: 35px;
+    vertical-align: -7px;
+    margin-right: 10px;
+}
+.main .main-box .aside .side-activities .about ul li span{
+    margin-left: 123px;
+}
+
+
+/*hot news*/
+.main .main-box .aside .side-activities .hot-news{
+    width: 320px;
+    padding: 0 20px;
+    position: relative;
+}
+.main .main-box .aside .side-activities .hot-news div{
+    width: 200px;
+    line-height: 28px;
+    /*超出隐藏*/
+    overflow: hidden;
+    /*出现省略号*/
+    text-overflow: ellipsis;
+    /*是在第几行*/
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+}
+
+.main .main-box .aside .side-activities .hot-news p{
+    width: 200px;
+    padding: 0;
+}
+.main .main-box .aside .side-activities .hot-news p .right{
+    float: right;
+}
+.main .main-box .aside .side-activities .hot-news>img{
+    width: 110px;
+    height: 70px;
+    position: absolute;
+    left: 221px;
+    top: 6px;
+}
+
+
+
+
+
+
